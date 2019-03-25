@@ -31,5 +31,18 @@ namespace assignment_2
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            double resistance1 = double.Parse(textBox1.Text);
+            double resistance2 = double.Parse(textBox2.Text);
+            double resistance3 = double.Parse(textBox3.Text);
+            double resistance4 = double.Parse(textBox4.Text);
+            double resistance5 = double.Parse(textBox5.Text);
+
+            double Total_Resistance = resistance1 + resistance2 + resistance3 + resistance4 + resistance5;
+            MessageBox.Show("Total_Resistance = " + Total_Resistance.ToString("0.00") + "ohms");
+        }
     }
 }
